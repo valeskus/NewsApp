@@ -3,7 +3,7 @@ import {Colors} from '../Colors';
 
 export const styles = StyleSheet.create({
   cardContainer: {
-    width: '85%',
+    flex: 1,
     borderRadius: 10,
     backgroundColor: Colors.background,
     shadowColor: Colors.shadow,
@@ -11,8 +11,8 @@ export const styles = StyleSheet.create({
     shadowRadius: 5,
     shadowOffset: {width: 0, height: 0},
     flexDirection: 'column',
-    marginVertical: 5,
-    marginHorizontal: '30%',
+    marginTop: 30,
+    marginHorizontal: 3,
     elevation: 8,
   },
   cardImage: {

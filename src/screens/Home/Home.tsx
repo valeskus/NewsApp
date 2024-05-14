@@ -6,6 +6,7 @@ import {Search} from '../../components/Search';
 import {RoundButton} from '../../UI/RoundButton';
 import {useHomeController} from './useHomeController';
 import {Icons} from '../../UI/Icons';
+import {CardList} from './components/CardsList';
 
 export function Home(): JSX.Element {
   const {newsList} = useHomeController();
@@ -21,6 +22,7 @@ export function Home(): JSX.Element {
           <Text style={styles.message}>No results found</Text>
         </View>
       )}
+      {newsList.length !== 0 && <CardList cardList={newsList} />}
     </SafeAreaView>
   );
 }
