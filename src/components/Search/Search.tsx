@@ -9,6 +9,7 @@ import {useSearchController} from './useSearchController';
 export function Search(): JSX.Element {
   const {searchTerm, isFocused, handleChange, handleFocus, handleBlur} =
     useSearchController();
+
   return (
     <Pressable style={styles.searchBarContainer} onPress={() => {}}>
       <Pressable

@@ -1,12 +1,17 @@
-import {useCallback, useState} from 'react';
+import {useCallback, useContext, useState} from 'react';
+import {Context} from '../../Context';
 
 export const useSearchController = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const {searchTerm, setSearchTerm} = useContext(Context);
+
   const [isFocused, setFocused] = useState(false);
 
-  const handleChange = useCallback((nextValue: string) => {
-    setSearchTerm(nextValue);
-  }, []);
+  const handleChange = useCallback(
+    (nextValue: string) => {
+      setSearchTerm(nextValue);
+    },
+    [setSearchTerm],
+  );
 
   const handleFocus = useCallback(() => {
     setFocused(true);
