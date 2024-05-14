@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
     backgroundColor: Colors.background_secondary,
     justifyContent: 'center',
     position: 'relative',
-    margin: 8,
+    marginLeft: 10,
   },
 
   buttonPressed: {

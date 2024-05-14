@@ -5,12 +5,14 @@ export const styles = StyleSheet.create({
   screenContainer: {
     flex: 1,
     flexDirection: 'column',
-    paddingHorizontal: 30,
     backgroundColor: Colors.background,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   searchContainer: {
+    width: '90%',
     flexDirection: 'row',
-    alignItems: 'center',
+    justifyContent: 'center',
   },
   bodyContainer: {
     flex: 1,

@@ -5,15 +5,13 @@ import {Colors} from '../../UI/Colors';
 export const styles = StyleSheet.create({
   searchBarContainer: {
     borderRadius: 10,
-    width: 311,
+    width: '80%',
     height: 48,
     backgroundColor: Colors.background_secondary,
     flexDirection: 'row',
     position: 'relative',
     justifyContent: 'flex-start',
     fontSize: 15,
-    paddingHorizontal: 10,
-    marginHorizontal: 10,
   },
   searchBarInput: {
     fontSize: 16,
