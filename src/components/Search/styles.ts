@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
   },
   searchBarInput: {
     fontSize: 16,
-    fontFamily: 'Roboto-Regular',
+    fontFamily: 'Roboto',
     padding: 0,
     color: Colors.text_secondary,
     position: 'absolute',

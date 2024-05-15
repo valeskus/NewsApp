@@ -4,7 +4,7 @@ import {Image, Pressable, Text, View} from 'react-native';
 import {styles} from './styles';
 
 interface Props {
-  onPress: () => any;
+  onPress: () => void;
   time: string;
   title: string;
   description: string;
@@ -21,6 +21,7 @@ export function Card({
   return (
     <Pressable
       onPress={onPress}
+      onLongPress={() => {}}
       style={({pressed}) => [
         styles.cardContainer,
         pressed && styles.cardPressed,

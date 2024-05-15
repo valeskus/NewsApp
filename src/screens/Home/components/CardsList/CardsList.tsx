@@ -12,8 +12,7 @@ interface Props {
 }
 
 export function CardList({cardList}: Props): JSX.Element {
-  const {isLoading} = useCardListController();
-
+  const {isLoading, onPress} = useCardListController();
   return (
     <>
       {isLoading && <ActivityIndicator size={'large'} color={'white'} />}
@@ -27,7 +26,7 @@ export function CardList({cardList}: Props): JSX.Element {
               title={item.title}
               description={item.description}
               image={item.image}
-              onPress={() => {}}
+              onPress={() => onPress(item.id)}
             />
           )}
           keyExtractor={item => item.id}
