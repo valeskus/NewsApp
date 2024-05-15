@@ -5,6 +5,7 @@ import {styles} from './styles';
 
 interface Props {
   onPress: () => void;
+  onLongPress: () => void;
   time: string;
   title: string;
   description: string;
@@ -13,6 +14,7 @@ interface Props {
 
 export function Card({
   onPress,
+  onLongPress,
   time,
   title,
   description,
@@ -21,7 +23,7 @@ export function Card({
   return (
     <Pressable
       onPress={onPress}
-      onLongPress={() => {}}
+      onLongPress={onLongPress}
       style={({pressed}) => [
         styles.cardContainer,
         pressed && styles.cardPressed,
